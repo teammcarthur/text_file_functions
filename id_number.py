@@ -17,4 +17,10 @@ import os
 
 #-----Main Routine-----
 if(__name__ == "__main__"):
-    pass
+    while(True):
+        first_name = input("Please enter your first name")
+        if(len(first_name) < 2 or len(first_name) > 20 or not first_name.isalpha):
+            print("Please enter a valid name")
+            continue
+        else:
+            break
