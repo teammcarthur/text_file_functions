@@ -24,3 +24,10 @@ if(__name__ == "__main__"):
             continue
         else:
             break
+    while(True):
+        last_name = input("Please enter your last name")
+        if(len(last_name) < 2 or len(last_name) > 20 or not last_name.isalpha):
+            print("Please enter a valid name")
+            continue
+        else:
+            break
