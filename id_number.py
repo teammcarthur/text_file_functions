@@ -24,10 +24,11 @@ if(__name__ == "__main__"):
             continue
         else:
             break
-    while(True):
+    while(True): #This loop validates the users input for last name
         last_name = input("Please enter your last name")
         if(len(last_name) < 2 or len(last_name) > 20 or not last_name.isalpha):
             print("Please enter a valid name")
             continue
         else:
             break
+    year = random.randint(2025, 2050) #Stores a random number from 2025 to 2050
