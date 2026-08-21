@@ -17,14 +17,16 @@ import os
 def string_slice(last_name, first_name, year):
     last_name = last_name[:1]
     year = str(year)[:3]
-    username = (first_name + last_name + str(year))
-    return username
+    combined_name = (first_name + last_name + str(year))
+    return combined_name
 
 def unique_code():
     code = random.randint(111, 999)
     return code
 #-----Main Routine-----
 if(__name__ == "__main__"):
+    combined_name = ""
+    code = 0
     while(True):
         first_name = input("Please enter your first name")
         if(len(first_name) < 2 or len(first_name) > 20 or not first_name.isalpha):
@@ -41,3 +43,6 @@ if(__name__ == "__main__"):
             break
     year = random.randint(2025, 2050) #Stores a random number from 2025 to 2050
     string_slice(last_name, first_name, year)
+    unique_code()
+    username = combined_name + str(code)
+    print(username)
