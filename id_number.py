@@ -13,7 +13,9 @@ import string
 import os
 
 #-----Functions-----
-
+#Function to remove all letters excluding the first letter from last name
+def string_slice(last_name):
+    pass
 
 #-----Main Routine-----
 if(__name__ == "__main__"):
