@@ -18,7 +18,11 @@ def string_slice(last_name, first_name, year):
     last_name = last_name[:1]
     year = str(year)[:3]
     username = (first_name + last_name + str(year))
+    return username
 
+def unique_code():
+    code = random.randint(111, 999)
+    return code
 #-----Main Routine-----
 if(__name__ == "__main__"):
     while(True):
