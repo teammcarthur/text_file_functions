@@ -20,7 +20,7 @@ def string_slice(last_name, first_name, year):
     combined_name = (first_name + last_name + str(year))
     return combined_name
 
-def unique_code():
+def unique_code(code):
     code = random.randint(111, 999)
     return code
 #-----Main Routine-----
@@ -43,6 +43,7 @@ if(__name__ == "__main__"):
             break
     year = random.randint(2025, 2050) #Stores a random number from 2025 to 2050
     string_slice(last_name, first_name, year)
-    unique_code()
+    unique_code(code)
     username = combined_name + str(code)
     print(username)
+    gmail_login = username + "@gmail.com"
