@@ -13,9 +13,11 @@ import string
 import os
 
 #-----Functions-----
-#Function to remove all letters excluding the first letter from last name
-def string_slice(last_name):
-    pass
+#Function to remove all letters excluding the first letter from last name and concatenate the names and year
+def string_slice(last_name, first_name, year):
+    last_name = last_name[:1]
+    year = year[:3]
+    username = (first_name + last_name + str(year))
 
 #-----Main Routine-----
 if(__name__ == "__main__"):
