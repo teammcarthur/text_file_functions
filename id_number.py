@@ -42,8 +42,8 @@ if(__name__ == "__main__"):
         else:
             break
     year = random.randint(2025, 2050) #Stores a random number from 2025 to 2050
-    string_slice(last_name, first_name, year)
-    unique_code(code)
-    username = combined_name + str(code)
+    string_slice(last_name, first_name, year) # calls the string slice function
+    unique_code(code) # calls the unique code function
+    username = combined_name + str(code) # concatenates the combined name and the unique code
     print(username)
-    gmail_login = username + "@gmail.com"
+    gmail_login = username + "@gmail.com" # adds @gmail.com to the end of the username to create a gmail login
